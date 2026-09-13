@@ -11,6 +11,7 @@ Criteria for inclusion: freely accessible, based on measured or normative conten
 - [Standards and regulations](#standards-and-regulations)
 - [Simulation software](#simulation-software)
 - [APIs and machine-readable data](#apis-and-machine-readable-data)
+- [Open-source projects on GitHub](#open-source-projects-on-github)
 - [Learning](#learning)
 - [Contributing](#contributing)
 
@@ -25,6 +26,8 @@ Criteria for inclusion: freely accessible, based on measured or normative conten
 
 - [Reverberation time calculator](https://acousticindex.com/en/reverberation-calculator) - RT60 per Sabine and Eyring with target ranges from 26 regulations across 15 countries (DIN 18041, SS 25268, the French Arrêté of 25 April 2003 and NF S 31-080, ANSI/ASA S12.60 and more), pulls measured products straight from the Acoustic Index database and auralises the result. Free, no account needed.
 - [Sound absorption classes A to E](https://acousticindex.com/en/sound-absorption-classes) - Table of the αw limits per class with an interactive mapper from αw to class.
+- [misuka](https://github.com/misuka-renderer/misuka) - Differentiable room acoustic renderer from TU Berlin (Audio Communication Group and Computer Graphics Group), built on Mitsuba 3. Simulates sound propagation in a 3D scene and lets you optimise material parameters against a target, open source.
+- [misuka-blender](https://github.com/misuka-renderer/misuka-blender) - Blender add-on for misuka. Materials can be searched and assigned straight from the Acoustic Index database through its Read API, so the simulation runs on measured ISO 354 curves instead of guessed coefficients.
 - [Sengpielaudio](https://sengpielaudio.com/calculator-RT60.htm) - Classic single-purpose calculators for the Sabine formula and related quantities.
 - [Engineering ToolBox absorption coefficients](https://www.engineeringtoolbox.com/accoustic-sound-absorption-d_68.html) - Textbook values for generic surfaces such as concrete, glass, carpet. Useful for base surfaces, not for products.
 
@@ -46,8 +49,22 @@ Criteria for inclusion: freely accessible, based on measured or normative conten
 - [CATT-Acoustic](https://www.catt.se) - Room acoustics prediction and auralisation, Sweden.
 - [EASE](https://www.afmg.eu) - Electro-acoustic and room acoustics simulation by AFMG, Germany.
 - [Treble](https://www.treble.tech) - Wave-based and hybrid simulation in the cloud, Iceland.
-- [pachyderm-acoustic](https://github.com/PachydermAcoustic/Pachyderm-Acoustic) - Open-source geometrical acoustics for Rhino and Grasshopper.
+- [Pachyderm Acoustic](https://github.com/PachydermAcoustic/PachydermAcoustic_Rhinoceros) - Open-source geometrical acoustics plug-in for Rhinoceros, with a [Grasshopper extension](https://github.com/PachydermAcoustic/PachydermAcoustic_Grasshopper).
 - [I-Simpa](https://i-simpa.ifsttar.fr) - Open-source room acoustics simulation platform.
+
+## Open-source projects on GitHub
+
+Libraries and engines that are worth knowing when you work with room acoustics in code. None of them ships measured product data; pair them with a database from the first section.
+
+- [pyroomacoustics](https://github.com/LCAV/pyroomacoustics) - Python package for room impulse response simulation (image source method and ray tracing), beamforming and source separation, from EPFL's LCAV. The standard tool for quick shoebox and polyhedral room experiments.
+- [pyfar](https://github.com/pyfar/pyfar) - Python package for acoustics research: signals, filters, room and free-field data handling, plotting. Grown out of the TU Berlin and RWTH acoustics groups.
+- [python-acoustics](https://github.com/python-acoustics/python-acoustics) - Library for acousticians: octave bands, weighting, room acoustics parameters per ISO 3382, atmospheric absorption.
+- [gpuRIR](https://github.com/DavidDiazGuerra/gpuRIR) - Room impulse response simulation with GPU acceleration, useful when you need thousands of RIRs for machine learning.
+- [RIR-Generator](https://github.com/ehabets/RIR-Generator) - The classic MATLAB image method implementation by Emanuel Habets, still the reference many papers cite.
+- [openPSTD](https://github.com/openPSTD/openPSTD) - Open-source pseudo-spectral time-domain solver with a visual interface for wave-based room acoustics.
+- [Steam Audio](https://github.com/ValveSoftware/steam-audio) - Valve's spatial audio SDK for games with physics-based occlusion, reflections and reverb; open source.
+- [Resonance Audio](https://github.com/resonance-audio/resonance-audio) - Google's spatial audio SDK with ambisonic rendering and room effects; open source.
+- [misuka](https://github.com/misuka-renderer/misuka) - Differentiable room acoustic renderer from TU Berlin, see Calculators and tools.
 
 ## APIs and machine-readable data
 
