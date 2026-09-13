@@ -12,7 +12,6 @@ Criteria for inclusion: freely accessible, based on measured or normative conten
 - [Simulation software](#simulation-software)
 - [APIs and machine-readable data](#apis-and-machine-readable-data)
 - [Open-source projects on GitHub](#open-source-projects-on-github)
-- [Learning](#learning)
 - [Contributing](#contributing)
 
 ## Measured material data
@@ -96,13 +95,6 @@ Libraries, engines and datasets that are worth knowing when you work with room a
 - [dEchorate](https://github.com/Chutlhu/dEchorate) - Measured RIR dataset with annotated early reflections in a room whose surfaces can be switched between absorbing and reflecting.
 - [MeshRIR](https://github.com/sh01k/MeshRIR) - Room impulse responses measured on dense microphone grids, for sound field analysis and interpolation, CC-BY 4.0.
 
-## Learning
-
-- [BauNetz Wissen Akustik](https://www.baunetzwissen.de/akustik) - German reference on building and room acoustics for architects.
-- [Acoustic Index guides](https://acousticindex.com/en/guides) - Short explainers with sources, for example [Basotect vs stone wool](https://acousticindex.com/en/basotect-vs-stone-wool) and [sound insulation vs sound absorption](https://acousticindex.com/en/sound-insulation-vs-absorption).
-- [DEGA](https://www.dega-akustik.de) - Deutsche Gesellschaft für Akustik, publications and the DAGA conference.
-- [Digital learning platform for acoustics](https://github.com/Building-acoustics-TU-Eindhoven/digital-learning-platform-for-acoustics) - Open Jupyter Book course material on room and building acoustics from TU Eindhoven, CC-BY 4.0.
-- Books - Heinrich Kuttruff, *Room Acoustics*; Trevor Cox and Peter D'Antonio, *Acoustic Absorbers and Diffusers*; Lothar Cremer and Helmut Müller, *Principles and Applications of Room Acoustics*; Fasold and Veres, *Schallschutz und Raumakustik in der Praxis*.
 
 ## Contributing
 
