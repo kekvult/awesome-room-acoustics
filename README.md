@@ -57,6 +57,7 @@ Criteria for inclusion: freely accessible, based on measured or normative conten
 Libraries and engines that are worth knowing when you work with room acoustics in code. None of them ships measured product data; pair them with a database from the first section.
 
 - [pyroomacoustics](https://github.com/LCAV/pyroomacoustics) - Python package for room impulse response simulation (image source method and ray tracing), beamforming and source separation, from EPFL's LCAV. The standard tool for quick shoebox and polyhedral room experiments.
+- [misuka](https://github.com/misuka-renderer/misuka) - Differentiable room acoustic renderer from TU Berlin, built on Mitsuba 3; optimises material parameters against a target and has a Blender add-on.
 - [pyfar](https://github.com/pyfar/pyfar) - Python package for acoustics research: signals, filters, room and free-field data handling, plotting. Grown out of the TU Berlin and RWTH acoustics groups.
 - [python-acoustics](https://github.com/python-acoustics/python-acoustics) - Library for acousticians: octave bands, weighting, room acoustics parameters per ISO 3382, atmospheric absorption.
 - [gpuRIR](https://github.com/DavidDiazGuerra/gpuRIR) - Room impulse response simulation with GPU acceleration, useful when you need thousands of RIRs for machine learning.
@@ -64,19 +65,16 @@ Libraries and engines that are worth knowing when you work with room acoustics i
 - [openPSTD](https://github.com/openPSTD/openPSTD) - Open-source pseudo-spectral time-domain solver with a visual interface for wave-based room acoustics.
 - [Steam Audio](https://github.com/ValveSoftware/steam-audio) - Valve's spatial audio SDK for games with physics-based occlusion, reflections and reverb; open source.
 - [Resonance Audio](https://github.com/resonance-audio/resonance-audio) - Google's spatial audio SDK with ambisonic rendering and room effects; open source.
-- [misuka](https://github.com/misuka-renderer/misuka) - Differentiable room acoustic renderer from TU Berlin, see Calculators and tools.
 
 ## APIs and machine-readable data
 
-- [Acoustic Index Read API](https://acousticindex.com/api) - REST API for searching materials and loading full product details with frequency-band absorption data. [OpenAPI specification](https://acousticindex.com/api/v1/openapi.json), example clients in Node.js and Python in [acousticindex-api-example](https://github.com/kekvult/acousticindex-api-example).
-- Acoustic Index MCP server - `https://acousticindex.com/api/mcp/v1` exposes the database to Claude, ChatGPT and other assistants that speak the Model Context Protocol, so an assistant can look up measured αw values instead of guessing them. Documentation under [/api](https://acousticindex.com/api).
-- [llms.txt](https://acousticindex.com/llms.txt) - Curated entry points of the Acoustic Index database for AI crawlers and answer engines.
-- Product pages of Acoustic Index carry schema.org Product and Dataset JSON-LD with the band values as variableMeasured, test lab, report number and measurement date, so the numbers can be read by machines without scraping tables.
+- [Acoustic Index Read API](https://acousticindex.com/api) - REST API for searching materials and loading product details with frequency-band absorption data. [OpenAPI spec](https://acousticindex.com/api/v1/openapi.json), example clients in Node.js and Python: [acousticindex-api-example](https://github.com/kekvult/acousticindex-api-example).
+- Acoustic Index MCP server - `https://acousticindex.com/api/mcp/v1`, lets Claude, ChatGPT and other MCP clients look up measured αw values instead of guessing them.
 
 ## Learning
 
-- [Acoustic Index guides](https://acousticindex.com/en/guides) - Short, source-backed explainers: [Basotect vs stone wool](https://acousticindex.com/en/basotect-vs-stone-wool), [acoustic foam or mineral wool](https://acousticindex.com/en/foam-or-mineral-wool), [sound insulation vs sound absorption](https://acousticindex.com/en/sound-insulation-vs-absorption), [comparing sound absorbers](https://acousticindex.com/en/compare-sound-absorbers).
 - [BauNetz Wissen Akustik](https://www.baunetzwissen.de/akustik) - German reference on building and room acoustics for architects.
+- [Acoustic Index guides](https://acousticindex.com/en/guides) - Short explainers with sources, for example [Basotect vs stone wool](https://acousticindex.com/en/basotect-vs-stone-wool) and [sound insulation vs sound absorption](https://acousticindex.com/en/sound-insulation-vs-absorption).
 - [DEGA](https://www.dega-akustik.de) - Deutsche Gesellschaft für Akustik, publications and the DAGA conference.
 - Books - Heinrich Kuttruff, *Room Acoustics*; Trevor Cox and Peter D'Antonio, *Acoustic Absorbers and Diffusers*; Lothar Cremer and Helmut Müller, *Principles and Applications of Room Acoustics*; Fasold and Veres, *Schallschutz und Raumakustik in der Praxis*.
 
