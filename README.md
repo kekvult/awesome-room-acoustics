@@ -29,6 +29,8 @@ Criteria for inclusion: freely accessible, based on measured or normative conten
 - [misuka-blender](https://github.com/misuka-renderer/misuka-blender) - Blender add-on for misuka. Materials can be searched and assigned straight from the Acoustic Index database through its Read API, so the simulation runs on measured ISO 354 curves instead of guessed coefficients.
 - [Sengpielaudio](https://sengpielaudio.com/calculator-RT60.htm) - Classic single-purpose calculators for the Sabine formula and related quantities.
 - [Engineering ToolBox absorption coefficients](https://www.engineeringtoolbox.com/accoustic-sound-absorption-d_68.html) - Textbook values for generic surfaces such as concrete, glass, carpet. Useful for base surfaces, not for products.
+- [Room mode calculator](https://theaudiostuff.com/tools/room-mode-calculator/) - Standing-wave resonances up to 300 Hz for rectangular, L-shaped, round and arched-ceiling rooms, with a node and antinode visualiser for seat and bass trap placement. Free, no account needed.
+- [Acoustic panel calculator](https://theaudiostuff.com/tools/acoustic-panel-calculator/) - Absorption coefficient of a porous panel from 20 Hz to 8 kHz from material flow resistivity, thickness and air gap, with NRC and SAA. Presets for common boards such as Owens Corning 703 and Rockwool RW3. Free, no account needed.
 
 ## Standards and regulations
 
